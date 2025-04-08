@@ -54,3 +54,5 @@ const AudioStreamer: React.FC = ({ webSocketAddress = new URL("ws://localhost:40
         </div>
     );
 };
+
+export default AudioStreamer;
