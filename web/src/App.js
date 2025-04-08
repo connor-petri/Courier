@@ -1,11 +1,11 @@
 import React from 'react';
-import DictationComponent from './DictationComponent';
+import AudioStreamer from './AudioStreamer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <DictationComponent />
+      <AudioStreamer />
     </div>
   );
 }

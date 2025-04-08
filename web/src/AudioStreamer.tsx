@@ -5,7 +5,7 @@ type AudioStreamerOptions = {
     chunkRateMs: number;
 }
 
-const AudioStreamer: React.FC = ({ webSocketAddress = new URL("ws://localhost:4000"), chunkRateMs = 250 }: AudioStreamerOptions) => {
+const AudioStreamer: React.FC<AudioStreamerOptions> = ({ webSocketAddress = new URL("ws://localhost:8000"), chunkRateMs = 250 }: AudioStreamerOptions) => {
     const [isStreaming, setIsStreaming] = useState(false);
     const mediaRecorderRef = useRef<MediaRecorder | null>(null);
     const socketRef = useRef<WebSocket | null>(null);
@@ -51,6 +51,7 @@ const AudioStreamer: React.FC = ({ webSocketAddress = new URL("ws://localhost:40
             <button onClick={isStreaming ? stopStreaming : startStreaming}>
                 {isStreaming ? 'Stop Streaming' : 'Start Streaming'}
             </button>
+            <p>{socketRef?.current?.readyState == WebSocket.OPEN ? "Connected" : "Not Connected"}</p>
         </div>
     );
 };
