@@ -1,57 +1,65 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 type AudioStreamerOptions = {
     webSocketAddress: URL;
     chunkRateMs: number;
-}
+};
 
-const AudioStreamer: React.FC<AudioStreamerOptions> = ({ webSocketAddress = new URL("ws://localhost:8000"), chunkRateMs = 250 }: AudioStreamerOptions) => {
+const AudioStreamer: React.FC<AudioStreamerOptions> = ({ webSocketAddress = new URL("ws://localhost:8000/ws/audio_stream/"), chunkRateMs = 250 }: AudioStreamerOptions) => {
     const [isStreaming, setIsStreaming] = useState(false);
-    const mediaRecorderRef = useRef<MediaRecorder | null>(null);
     const socketRef = useRef<WebSocket | null>(null);
+    const audioContextRef = useRef<AudioContext | null>(null);
 
     const startStreaming = async () => {
         try {
-            // Get permission to use microphone
+            // Get permission to use the microphone
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-            
-            // Connect Websocket
+
+            // Create WebSocket connection
             const socket = new WebSocket(webSocketAddress);
             socketRef.current = socket;
 
-            const mediaRecorder = new MediaRecorder(stream);
-            mediaRecorderRef.current = mediaRecorder;
+            // Create AudioContext
+            const audioContext = new AudioContext();
+            audioContextRef.current = audioContext;
 
-            // Stream data through the socket when available
-            mediaRecorder.ondataavailable = (event: BlobEvent) => {
-                if (event.data.size > 0 && socket.readyState == WebSocket.OPEN) {
-                    event.data.arrayBuffer().then((buffer) => {
-                        socket.send(buffer);
-                    });
+            // Add an AudioWorkletProcessor
+            await audioContext.audioWorklet.addModule('/static/audio-worklet-processor.js');
+
+            const source = audioContext.createMediaStreamSource(stream);
+            const workletNode = new AudioWorkletNode(audioContext, 'audio-processor');
+
+            workletNode.port.onmessage = (event) => {
+                if (socket.readyState === WebSocket.OPEN) {
+                    socket.send(event.data); // Send raw PCM data
                 }
             };
 
-            // stream chunks every chunkRateMs ms
-            mediaRecorder.start(chunkRateMs);
+            source.connect(workletNode);
+            workletNode.connect(audioContext.destination);
+
             setIsStreaming(true);
         } catch (err) {
-            console.error('Failed to start Recording', err);
+            console.error('Failed to start streaming:', err);
         }
     };
 
     const stopStreaming = () => {
-        mediaRecorderRef.current?.stop();
-        setIsStreaming(false);
-
+        // Close WebSocket
         socketRef.current?.close();
-    }
+
+        // Close AudioContext
+        audioContextRef.current?.close();
+
+        setIsStreaming(false);
+    };
 
     return (
         <div>
             <button onClick={isStreaming ? stopStreaming : startStreaming}>
                 {isStreaming ? 'Stop Streaming' : 'Start Streaming'}
             </button>
-            <p>{socketRef?.current?.readyState == WebSocket.OPEN ? "Connected" : "Not Connected"}</p>
+            <p>{socketRef?.current?.readyState === WebSocket.OPEN ? 'Connected' : 'Not Connected'}</p>
         </div>
     );
 };
