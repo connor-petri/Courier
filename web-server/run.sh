@@ -9,4 +9,4 @@ rm -rf staticfiles
 python3 manage.py collectstatic
 
 # Run
-daphne -b 0.0.0.0 -p 8000 courier_web_server.asgi:application
+daphne -b 127.0.0.1 -p 8000 courier_web_server.asgi:application
