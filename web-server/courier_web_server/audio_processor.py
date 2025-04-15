@@ -5,27 +5,19 @@ import asyncio
 from multiprocessing import Queue
 import speech_recognition as sr
 
-async def process_audio_async(queue: Queue):
+def process_audio(queue: Queue, sample_rate: int, sample_width: int, channels: int):
     recognizer = sr.Recognizer()
     transcript = ""
     buffer = b""
-    chunk_duration_seconds = 3
-    sample_rate = 44100
-    sample_width = 2
-    bytes_per_second = sample_rate * sample_width
-    chunk_size = bytes_per_second * chunk_duration_seconds
-    print(f"Chunk size: {chunk_size} bytes")
 
     audio_file = wave.open(f"./audio/{datetime.now().strftime('%Y%m%d_%H%M%S')}.wav", 'wb')
-    audio_file.setnchannels(1) # Mono
-    audio_file.setsampwidth(2) # 16-bit
-    audio_file.setframerate(44100)
+    audio_file.setnchannels(channels) # Mono
+    audio_file.setsampwidth(sample_width) # 16-bit
+    audio_file.setframerate(sample_rate)
 
     while True:
-        if queue.empty():
-            continue
-
         audio_data = queue.get()
+
         if audio_data == "STOP":
             break
 
@@ -33,7 +25,7 @@ async def process_audio_async(queue: Queue):
 
         audio_file.writeframes(audio_data)
 
-        if len(buffer) >= chunk_size:
+        if len(buffer) >= sample_rate * sample_width * channels * 3:
             try:
                 audio = sr.AudioData(buffer, sample_rate=44100, sample_width=2)
                 text = recognizer.recognize_google(audio)
@@ -47,7 +39,3 @@ async def process_audio_async(queue: Queue):
                 buffer = b""
 
     print("Final transcript:", transcript)
-
-
-def process_audio(queue: Queue):
-    asyncio.run(process_audio_async(queue))
