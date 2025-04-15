@@ -19,6 +19,16 @@ const AudioStreamer: React.FC<AudioStreamerOptions> = ({ webSocketAddress = new 
             const socket = new WebSocket(webSocketAddress);
             socketRef.current = socket;
 
+            // Send recording metadata to the server
+            socket.onopen = () => {
+                const metadata = {
+                    sample_rate: 44100,
+                    sample_width: 2,
+                    channels: 1,
+                }
+                socket.send(JSON.stringify(metadata));
+            };
+
             // Create AudioContext
             const audioContext = new AudioContext();
             audioContextRef.current = audioContext;
