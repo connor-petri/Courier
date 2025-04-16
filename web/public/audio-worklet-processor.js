@@ -1,3 +1,4 @@
+// This file is part of the Web Audio API implementation for audio processing.
 class AudioProcessor extends AudioWorkletProcessor {
     process(inputs, outputs, parameters) {
         const input = inputs[0];

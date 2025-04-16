@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 
 type AudioStreamerOptions = {
-    webSocketAddress: URL;
-    chunkRateMs: number;
+    webSocketAddress?: URL;
+    chunkRateMs?: number;
 };
 
 const AudioStreamer: React.FC<AudioStreamerOptions> = ({ webSocketAddress = new URL("ws://localhost:8000/ws/audio_stream/"), chunkRateMs = 250 }: AudioStreamerOptions) => {
