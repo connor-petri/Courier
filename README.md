@@ -1,4 +1,4 @@
-# Outline
+# Courier - An AI assistant for D&D
 
 ## Project Description
 
