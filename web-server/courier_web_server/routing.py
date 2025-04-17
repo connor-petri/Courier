@@ -1,5 +1,5 @@
 from django.urls import path
-from .consumers import AudioStreamConsumer
+from .consumers.AudioStreamConsumer import AudioStreamConsumer
 
 websocket_urlpatterns = [
     path('ws/audio_stream/', AudioStreamConsumer.as_asgi()),
