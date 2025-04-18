@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'channels',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 ASGI_APPLICATION = 'courier_web+server.asgi.application'
@@ -150,3 +152,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#AUTH_USER_MODEL = 'models.User'
