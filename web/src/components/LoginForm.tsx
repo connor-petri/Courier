@@ -1,7 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 
-const LoginForm = () => {
+interface LoginFormProps {
+    onLoginSuccess: () => void;
+}
+
+const LoginForm: React.FC<LoginFormProps> = ({ onLoginSuccess }: LoginFormProps) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState<string | null>(null);
@@ -24,6 +28,7 @@ const LoginForm = () => {
 
             const data = await response.json();
             console.log('Login successful:', data);
+            onLoginSuccess(); // Call the success callback
 
         } catch (e: any) {
             console.error('Failed to login:', e);
