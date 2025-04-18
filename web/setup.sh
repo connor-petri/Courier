@@ -9,6 +9,8 @@ npm install typescript
 npm install react
 npm install react-dom
 npm install react-scripts --legacy-peer-deps
+npm install react-router-dom
+npm install --save-dev @types/react-router-dom
 
 cd ../web-server
 python3 -m venv venv

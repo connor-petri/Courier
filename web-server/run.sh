@@ -3,6 +3,7 @@ source venv/bin/activate
 
 # Collect static react files.
 cd ../web
+npm install package.json
 npm run build
 cd ../web-server
 rm -rf staticfiles
