@@ -11,8 +11,8 @@ const AudioStreamer: React.FC = () => {
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
 
             // Create WebSocket connection
-            const webSocketAddress = new URL('ws://' + process.env.SERVER_IP + ':' + process.env.SERVER_PORT);
-            const socket = new WebSocket(webSocketAddress + '/audio-stream');
+            const webSocketAddress = new URL('ws://' + process.env.REACT_APP_SERVER_IP + ':' + process.env.REACT_APP_SERVER_PORT);
+            const socket = new WebSocket(webSocketAddress.toString() + 'ws/audio_stream/');
             socketRef.current = socket;
 
             // Send recording metadata to the server
