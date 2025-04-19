@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 ]
 
-ASGI_APPLICATION = 'courier_web+server.asgi.application'
+ASGI_APPLICATION = 'courier_web_server.asgi.application'
 
 CHANNEL_LAYERS = {
     'default': {
@@ -65,6 +65,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
 ]
 
 ROOT_URLCONF = 'courier_web_server.urls'

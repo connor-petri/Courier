@@ -1,11 +1,12 @@
 import os
+import json
 from datetime import datetime
 from channels.generic.websocket import AsyncWebsocketConsumer
 import asyncio
 import speech_recognition as sr
 from .audio_processor import process_audio
 from multiprocessing import Queue, Process
-import json
+
 
 class AudioStreamConsumer(AsyncWebsocketConsumer):
     async def connect(self):
@@ -30,10 +31,6 @@ class AudioStreamConsumer(AsyncWebsocketConsumer):
     async def receive(self, text_data=None, bytes_data: bytes=None):
         if text_data:
             data = json.loads(text_data)
-
-            print(type(data.get('sample_rate')))
-            print(data.get('sample_width'))
-            print(data.get('channels'))
             if isinstance(data.get('sample_rate'), int) and isinstance(data.get('sample_width'), int) and isinstance(data.get('channels'), int):
                 self.audio_queue = Queue(maxsize=data['sample_rate'] * data['sample_width'] * data['channels'] * 3)
                 self.audio_processor = Process(target=process_audio, args=(self.audio_queue, data['sample_rate'], data['sample_width'], data['channels']))

@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from .views.home import home
 from .views.login import login
+from .views.register import register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('login/', login),
-    path('stream/', home),
+    path('register/', register)
 ]
