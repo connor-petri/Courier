@@ -16,15 +16,10 @@ Courier is a student project that aims to create a DM assistant tool for Dungeon
 ## Tech Stack
 
 - **Backend:** Python with Django for handling server-side operations and API endpoints. Chosen for it’s support for websockets.
-- **Container Infrastructure:**
-    - Docker for containerization and consistent deployment
-    - Kubernetes (k8s) for container orchestration and scaling
-- **Database:** PostgreSQL for storing game rules, reference materials, and user data.
+- **Database:** Game rules, reference materials, and monster stats will be stored in a vectorized database in Supabase for ease of access by AI agents.
 - **Automation:**
-    - n8n for workflow automation
-    - Flux for GitOps deployment
-    - ARC-runners for CI/CD pipelines
-- **Frontend:** React w/ Typescript
+    - n8n for workflow automation and AI agents.
+- **Frontend:** React w/ Typescript. This will record audio, send resource requests to n8n, do dictation and keyword detection, and display resources for the user.
 - **Additional Libraries:**
     - Speech recognition libraries for audio processing
     - Natural Language Processing (NLP) tools for understanding context
@@ -32,17 +27,3 @@ Courier is a student project that aims to create a DM assistant tool for Dungeon
     All of this will be deployed to a raspberry pi cluster that I own.
     
 
-## Front End
-
-The front end of this project will be a React app made using TypeScript.
-
-### Requirements
-
-The website must have the following capabilities:
-
-- Allow the user to log in, log out, and register.
-- Stream Audio Blobs to the server through a Websocket
-- Display server-generated DM resources to the user.
-- Remove unused resources automatically.
-
-## Back End
