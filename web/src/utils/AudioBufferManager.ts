@@ -5,12 +5,9 @@ class AudioBufferManager {
     private readonly bufferSize: number;
     private readonly sampleRate: number;
     private readonly sampleWidth: number;
-<<<<<<< Updated upstream
-=======
     
     // For use by the keyword detector
     private retrievalBuffer: number[] = [];
->>>>>>> Stashed changes
 
     private constructor(
         durationSeconds: number = 60,
@@ -37,10 +34,7 @@ class AudioBufferManager {
     addAudioData(data: Float32Array): void {
         for (let i = 0; i < data.length; i++) {
             this.buffer[this.writePosition] = data[i];
-<<<<<<< Updated upstream
-=======
             this.retrievalBuffer.push(data[i]);
->>>>>>> Stashed changes
             this.writePosition = (this.writePosition + 1) % this.bufferSize;
         }
     }
@@ -58,15 +52,11 @@ class AudioBufferManager {
     getRawBuffer(): Float32Array {
         return this.buffer;
     }
-<<<<<<< Updated upstream
-=======
 
     getRetrievalBuffer(): Float32Array {
         const array = new Float32Array(this.retrievalBuffer);
         this.retrievalBuffer.length = 0;
         return array;
     }
->>>>>>> Stashed changes
 }
-
 export default AudioBufferManager;
