@@ -20,9 +20,9 @@ Courier is a student project that aims to create a DM assistant tool for Dungeon
 - **Automation:**
     - n8n for workflow automation and AI agents.
 - **Frontend:** React w/ Typescript. This will record audio, send resource requests to n8n, take care of dictation and keyword detection, and display resources for the user.
-- **Additional Libraries:**
-    - Speech recognition libraries for audio processing
-    - Natural Language Processing (NLP) tools for understanding context
+- **Additional Components:**
+    - ```react-speech-recognition``` for keyword detection.
+    - Whisper hosted by Groq for audio transcription.
     
     All of this will be deployed to a raspberry pi cluster that I own.
     
