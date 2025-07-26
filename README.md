@@ -15,11 +15,11 @@ Courier is a student project that aims to create a DM assistant tool for Dungeon
 
 ## Tech Stack
 
-- **Backend:** Python with Django for handling server-side operations and API endpoints. Chosen for it’s support for websockets.
+- **Backend:** Supabase will be used for user authentication and management as well as storing game rules and monster data for retrieval by the AI Agent.
 - **Database:** Game rules, reference materials, and monster stats will be stored in a vectorized database in Supabase for ease of access by AI agents.
 - **Automation:**
     - n8n for workflow automation and AI agents.
-- **Frontend:** React w/ Typescript. This will record audio, send resource requests to n8n, do dictation and keyword detection, and display resources for the user.
+- **Frontend:** React w/ Typescript. This will record audio, send resource requests to n8n, take care of dictation and keyword detection, and display resources for the user.
 - **Additional Libraries:**
     - Speech recognition libraries for audio processing
     - Natural Language Processing (NLP) tools for understanding context
