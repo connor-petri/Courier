@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import AudioBufferManager from '../utils/AudioBufferManager';
 import { supabase } from '../supabase-client';
+import KeywordDetector from './KeywordDetector';
 
 interface AudioRecorderProps {
     durationSeconds: number;
@@ -201,6 +202,8 @@ const AudioRecorder: React.FC<AudioRecorderProps> = ({
             <p>Recording: {isRecording ? "Recording" : "Stopped"}</p>
             <p>Playback: {isPlaying ? "Playing" : "Stopped"}</p>
             <button onClick={() => { supabase.auth.signOut() }}>Log Out</button>
+            <div>
+            </div>
         </div>
     )
 }

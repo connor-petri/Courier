@@ -1,12 +1,19 @@
 import React, { useState, useRef, useEffect } from 'react';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import AudioBufferManager from '../utils/AudioBufferManager';
 
-const KeywordDetector: React.FC = () => {
+interface KeywordDetectorProps {
+    onKeywordDetected: any;
+}
+
+const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) => {
     const [initialized, setInitialized] = useState<boolean>(false);
     const [keywords, setKeywords] = useState<string[]>([]);
+    const [sampleIntervalMs, setSampleIntervalMs] = useState<number>(100);
 
-    const bufferRef = useRef<AudioBufferManager>(AudioBufferManager.getInstance());
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+    const { transcript, listening, resetTranscript } = useSpeechRecognition();
     
     const init = (): void => {
         if (initialized) return;
@@ -16,27 +23,38 @@ const KeywordDetector: React.FC = () => {
         keywords.push("roll");
         keywords.push("monster");
 
+        SpeechRecognition.startListening();
+
         setInitialized(true);
     }
 
-    const processAudioData = (): void => {
-        if (!bufferRef.current) return;
+    const checkTranscript = () => {
+        const foundKeyword = keywords.some(keyword => 
+            transcript.toLowerCase().includes(keyword.toLowerCase()));
 
-        const audioData: Float32Array = bufferRef.current.getRetrievalBuffer();
-        if (audioData.length === 0) return;
-
-        // Dictation here
-
-        // Check for Keywords
-
-        // Send resource request with audio to n8n
+        if (foundKeyword) {
+            console.log("Keyword Detected: " + foundKeyword);
+            onKeywordDetected();
+        }
     }
 
     useEffect(() => {
         if (!initialized) init();
-    })
+
+        // Process Audio every $sampleIntervalMs ms
+        intervalRef.current = setInterval(checkTranscript, sampleIntervalMs);
+
+        return () => {
+            SpeechRecognition.stopListening();
+        };
+    }, [intervalRef]);
 
     return (
-        <></>
+        <div>
+            <p>Keyword Detector Mounted</p>
+        </div>
     );
 }
+
+
+export default KeywordDetector;
