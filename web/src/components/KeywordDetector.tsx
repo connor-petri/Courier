@@ -1,60 +1,71 @@
 import React, { useState, useRef, useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import AudioBufferManager from '../utils/AudioBufferManager';
 
 interface KeywordDetectorProps {
-    onKeywordDetected: any;
+    onKeywordDetected: () => void;
 }
 
 const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) => {
     const [initialized, setInitialized] = useState<boolean>(false);
-    const [keywords, setKeywords] = useState<string[]>([]);
-    const [sampleIntervalMs, setSampleIntervalMs] = useState<number>(100);
+    const [error, setError] = useState<string | null>(null);
+    const [keywords] = useState<string[]>(["initiative", "roll", "monster"]);
 
-    const intervalRef = useRef<NodeJS.Timeout | null>(null);
-
-    const { transcript, listening, resetTranscript } = useSpeechRecognition();
+    const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
     
-    const init = (): void => {
-        if (initialized) return;
-
-        // FIXME: Replace with supabase call when set up.
-        keywords.push("initiative");
-        keywords.push("roll");
-        keywords.push("monster");
-
-        SpeechRecognition.startListening();
-
-        setInitialized(true);
-    }
-
-    const checkTranscript = () => {
-        const foundKeyword = keywords.some(keyword => 
-            transcript.toLowerCase().includes(keyword.toLowerCase()));
-
-        if (foundKeyword) {
-            console.log("Keyword Detected: " + foundKeyword);
-            onKeywordDetected();
+    const startListening = async () => {
+        try {
+            setError(null);
+            await SpeechRecognition.startListening({ continuous: true });
+            setInitialized(true);
+        } catch (err) {
+            setError(`Failed to start speech recognition: ${err}`);
+            console.error('Speech recognition error:', err);
         }
-    }
+    };
+
+    const stopListening = () => {
+        SpeechRecognition.stopListening();
+        setInitialized(false);
+    };
 
     useEffect(() => {
-        if (!initialized) init();
+        if (transcript && keywords.length > 0) {
+            const foundKeyword = keywords.find(keyword => 
+                transcript.toLowerCase().includes(keyword.toLowerCase())
+            );
 
-        // Process Audio every $sampleIntervalMs ms
-        intervalRef.current = setInterval(checkTranscript, sampleIntervalMs);
+            if (foundKeyword) {
+                console.log("Keyword Detected:", foundKeyword);
+                onKeywordDetected();
+                resetTranscript(); // Clear transcript after detection
+            }
+        }
+    }, [transcript, keywords, onKeywordDetected, resetTranscript]);
 
-        return () => {
-            SpeechRecognition.stopListening();
-        };
-    }, [intervalRef]);
+    // Check browser support
+    if (!browserSupportsSpeechRecognition) {
+        return (
+            <div>
+                <p style={{ color: 'red' }}>
+                    Browser doesn't support speech recognition. Please use Chrome or Safari.
+                </p>
+            </div>
+        );
+    }
 
     return (
         <div>
-            <p>Keyword Detector Mounted</p>
+            <div>
+                <button onClick={initialized ? stopListening : startListening}>
+                    {initialized ? "Stop Keyword Detection" : "Start Keyword Detection"}
+                </button>
+            </div>
+            <p>Keyword Detector: {listening ? "Listening" : "Not listening"}</p>
+            <p>Current transcript: {transcript}</p>
+            {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+            <p>Keywords: {keywords.join(", ")}</p>
         </div>
     );
 }
-
 
 export default KeywordDetector;

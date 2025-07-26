@@ -185,6 +185,63 @@ const AudioRecorder: React.FC<AudioRecorderProps> = ({
         return () => cleanup();
     }, []);
 
+    function createWavBuffer(): ArrayBuffer {
+        if (!bufferRef.current) return new ArrayBuffer(0);
+        const audioData = bufferRef.current.getAudio()!;
+        const length = audioData.length;
+        const buffer = new ArrayBuffer(44 + length * 2);
+        const view = new DataView(buffer);
+        
+        // WAV header
+        const writeString = (offset: number, string: string) => {
+            for (let i = 0; i < string.length; i++) {
+                view.setUint8(offset + i, string.charCodeAt(i));
+            }
+        };
+        
+        // RIFF chunk descriptor
+        writeString(0, 'RIFF');
+        view.setUint32(4, 36 + length * 2, true); // File size - 8
+        writeString(8, 'WAVE');
+        
+        // fmt sub-chunk
+        writeString(12, 'fmt ');
+        view.setUint32(16, 16, true); // Subchunk1Size (16 for PCM)
+        view.setUint16(20, 1, true); // AudioFormat (PCM = 1)
+        view.setUint16(22, 1, true); // NumChannels (mono = 1)
+        view.setUint32(24, sampleRate, true); // SampleRate
+        view.setUint32(28, sampleRate * 2, true); // ByteRate
+        view.setUint16(32, 2, true); // BlockAlign
+        view.setUint16(34, 16, true); // BitsPerSample
+        
+        // data sub-chunk
+        writeString(36, 'data');
+        view.setUint32(40, length * 2, true); // Subchunk2Size
+        
+        // Convert float samples to 16-bit PCM
+        let offset = 44;
+        for (let i = 0; i < length; i++) {
+            const sample = Math.max(-1, Math.min(1, audioData[i]));
+            view.setInt16(offset, sample * 0x7FFF, true);
+            offset += 2;
+        }
+        
+        return buffer;
+    }
+    
+    async function postAudioFile(url: string): Promise<Response> {
+        const wavBuffer = createWavBuffer();
+        const blob = new Blob([wavBuffer], { type: 'audio/wav' });
+        
+        const formData = new FormData();
+        formData.append('audio', blob, 'recording.wav');
+        
+        return fetch(url, {
+            method: 'POST',
+            body: formData
+        });
+    }
+
     return (
         <div>
             <div>
@@ -203,6 +260,9 @@ const AudioRecorder: React.FC<AudioRecorderProps> = ({
             <p>Playback: {isPlaying ? "Playing" : "Stopped"}</p>
             <button onClick={() => { supabase.auth.signOut() }}>Log Out</button>
             <div>
+                <KeywordDetector onKeywordDetected={ () => postAudioFile(
+                    "https://n8n.lab.printf.org/webhook-test/resource-request"
+                ) } />
             </div>
         </div>
     )
