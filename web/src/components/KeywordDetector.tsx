@@ -33,10 +33,6 @@ const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) 
         const getKeywords = async () => {
             const { data, error } = await supabase.from('keywords').select('*');
 
-            data?.forEach(row => {
-                console.log(row.keyword);
-            })
-
             if (error) {
                 console.error('Error fetching keywords:', error);
                 setError(`Failed to load keywords: ${error.message}`);
@@ -44,7 +40,6 @@ const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) 
             }
 
             if (keywords.length > 0) keywords.length = 0;
-
             
             if (data) {
                 const newKeywords: string[] = [];
@@ -56,18 +51,23 @@ const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) 
             }
         }
 
-        getKeywords();
+        try {
+            getKeywords();
 
-        if (transcript && keywords.length > 0) {
-            const foundKeyword = keywords.find(keyword => 
-                transcript.toLowerCase().includes(keyword.toLowerCase())
-            );
+            if (transcript && keywords.length > 0) {
+                const foundKeyword = keywords.find(keyword => 
+                    transcript.toLowerCase().includes(keyword.toLowerCase())
+                );
 
-            if (foundKeyword) {
-                console.log("Keyword Detected:", foundKeyword);
-                onKeywordDetected();
-                resetTranscript(); // Clear transcript after detection
+                if (foundKeyword) {
+                    console.log("Keyword Detected:", foundKeyword);
+                    onKeywordDetected();
+                    resetTranscript(); // Clear transcript after detection
+                }
             }
+        } catch (err) {
+            console.error(err);
+            setError("Error:" + err);
         }
     }, [transcript, keywords, onKeywordDetected, resetTranscript]);
 
@@ -92,7 +92,6 @@ const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) 
             <p>Keyword Detector: {listening ? "Listening" : "Not listening"}</p>
             <p>Current transcript: {transcript}</p>
             {error && <p style={{ color: 'red' }}>Error: {error}</p>}
-            <p>Keywords: {keywords.join(", ")}</p>
         </div>
     );
 }
