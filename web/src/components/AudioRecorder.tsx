@@ -181,7 +181,7 @@ const AudioRecorder: React.FC<AudioRecorderProps> = ({
     }
 
     useEffect(() => {
-        return cleanup;
+        return () => cleanup();
     }, []);
 
     return (
