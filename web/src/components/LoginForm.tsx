@@ -57,7 +57,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLoginSuccess }: LoginFormProps)
             </label>
             <button type="submit">{isRegister ? "Register" : "Log In"}</button>
             {displayError && <p style={{ color: 'red' }}>{displayError}</p>}
-            <center> <p>{isRegister ? "Already have an account?" : "Don't have an account?"}</p> </center>
+            <div style={{ textAlign: 'center' }}> <p>{isRegister ? "Already have an account?" : "Don't have an account?"}</p> </div>
             <button type="button" onClick={() => { setIsRegister(isRegister ? false : true)}}> {isRegister ? "Sign In" : "Sign Up"} </button>
         </form>
     )
