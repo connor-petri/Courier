@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import { supabase } from '../supabase-client'
 
 interface KeywordDetectorProps {
     onKeywordDetected: () => void;
@@ -8,7 +9,7 @@ interface KeywordDetectorProps {
 const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) => {
     const [initialized, setInitialized] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
-    const [keywords] = useState<string[]>(["initiative", "roll", "monster"]);
+    const [keywords, setKeywords] = useState<string[]>([]);
 
     const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
     
@@ -29,6 +30,34 @@ const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) 
     };
 
     useEffect(() => {
+        const getKeywords = async () => {
+            const { data, error } = await supabase.from('keywords').select('*');
+
+            data?.forEach(row => {
+                console.log(row.keyword);
+            })
+
+            if (error) {
+                console.error('Error fetching keywords:', error);
+                setError(`Failed to load keywords: ${error.message}`);
+                return;
+            }
+
+            if (keywords.length > 0) keywords.length = 0;
+
+            
+            if (data) {
+                const newKeywords: string[] = [];
+                data.forEach(row => {
+                    newKeywords.push(row.keyword);
+                })
+
+                setKeywords(newKeywords);
+            }
+        }
+
+        getKeywords();
+
         if (transcript && keywords.length > 0) {
             const foundKeyword = keywords.find(keyword => 
                 transcript.toLowerCase().includes(keyword.toLowerCase())
