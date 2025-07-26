@@ -1,0 +1,2074 @@
+id,keyword
+0,initiative
+1,roll
+2,attack
+3,avatar of death
+4,giant fly
+5,aarakocra
+6,aboleth
+7,abominable yeti
+8,acolyte
+9,adult black dragon
+10,adult blue dracolich
+11,adult blue dragon
+12,adult brass dragon
+13,adult bronze dragon
+14,adult copper dragon
+15,adult gold dragon
+16,adult green dragon
+17,adult red dragon
+18,adult silver dragon
+19,adult white dragon
+20,air elemental
+21,allosaurus
+22,ancient black dragon
+23,ancient blue dragon
+24,ancient brass dragon
+25,ancient bronze dragon
+26,ancient copper dragon
+27,ancient gold dragon
+28,ancient green dragon
+29,ancient red dragon
+30,ancient silver dragon
+31,ancient white dragon
+32,androsphinx
+33,animated armor
+34,ankheg
+35,ankylosaurus
+36,ape
+37,arcanaloth
+38,archmage
+39,assassin
+40,awakened shrub
+41,awakened tree
+42,axe beak
+43,azer
+44,baboon
+45,badger
+46,balor
+47,bandit
+48,bandit captain
+49,banshee
+50,barbed devil
+51,barlgura
+52,basilisk
+53,bat
+54,bearded devil
+55,behir
+56,beholder
+57,beholder zombie
+58,berserker
+59,black bear
+60,black dragon wyrmling
+61,black pudding
+62,blink dog
+63,blood hawk
+64,blue dragon wyrmling
+65,blue slaad
+66,boar
+67,bone devil
+68,bone devil polearm
+69,bone naga (guardian)
+70,bone naga (spirit)
+71,brass dragon wyrmling
+72,bronze dragon wyrmling
+73,brown bear
+74,bugbear
+75,bugbear chief
+76,bulette
+77,bullywug
+78,cambion
+79,camel
+80,carrion crawler
+81,cat
+82,cave bear
+83,centaur
+84,chain devil
+85,chasme
+86,chimera
+87,chuul
+88,clay golem
+89,cloaker
+90,cloud giant
+91,cockatrice
+92,commoner
+93,constrictor snake
+94,copper dragon wyrmling
+95,couatl
+96,crab
+97,crawling claw
+98,crocodile
+99,cult fanatic
+100,cultist
+101,cyclops
+102,dao
+103,darkmantle
+104,death dog
+105,death knight
+106,death slaad
+107,death tyrant
+108,deep gnome (svirfneblin)
+109,deer
+110,demilich
+111,deva
+112,dire wolf
+113,displacer beast
+114,djinni
+115,doppelganger
+116,draft horse
+117,dragon turtle
+118,dretch
+119,drider
+120,drider spellcaster
+121,drow
+122,drow elite warrior
+123,drow mage
+124,drow priestess of lolth
+125,druid
+126,dryad
+127,duergar
+128,duodrone
+129,dust mephit
+130,eagle
+131,earth elemental
+132,efreeti
+133,elephant
+134,elk
+135,empyrean
+136,erinyes
+137,ettercap
+138,ettin
+139,faerie dragon (older)
+140,faerie dragon (younger)
+141,fire elemental
+142,fire giant
+143,fire snake
+144,flameskull
+145,flesh golem
+146,flumph
+147,flying snake
+148,flying sword
+149,fomorian
+150,frog
+151,frost giant
+152,galeb duhr
+153,gargoyle
+154,gas spore
+155,gelatinous cube
+156,ghast
+157,ghost
+158,ghoul
+159,giant ape
+160,giant badger
+161,giant bat
+162,giant boar
+163,giant centipede
+164,giant constrictor snake
+165,giant crab
+166,giant crocodile
+167,giant eagle
+168,giant elk
+169,giant fire beetle
+170,giant frog
+171,giant goat
+172,giant hyena
+173,giant lizard
+174,giant octopus
+175,giant owl
+176,giant poisonous snake
+177,giant rat
+178,giant rat (diseased)
+179,giant scorpion
+180,giant sea horse
+181,giant shark
+182,giant spider
+183,giant toad
+184,giant vulture
+185,giant wasp
+186,giant weasel
+187,giant wolf spider
+188,gibbering mouther
+189,githyanki knight
+190,githyanki warrior
+191,githzerai monk
+192,githzerai zerth
+193,glabrezu
+194,gladiator
+195,gnoll
+196,gnoll fang of yeenoghu
+197,gnoll pack lord
+198,goat
+199,goblin
+200,goblin boss
+201,gold dragon wyrmling
+202,gorgon
+203,goristro
+204,gray ooze
+205,psychic gray ooze
+206,gray slaad
+207,green dragon wyrmling
+208,green hag
+209,green slaad
+210,grell
+211,grick
+212,grick alpha
+213,griffon
+214,grimlock
+215,guard
+216,guardian naga
+217,gynosphinx
+218,half-ogre (ogrillon)
+219,half-red dragon veteran
+220,harpy
+221,hawk
+222,hell hound
+223,helmed horror
+224,hezrou
+225,hill giant
+226,hippogriff
+227,hobgoblin
+228,hobgoblin captain
+229,hobgoblin warlord
+230,homunculus
+231,hook horror
+232,horned devil
+233,hunter shark
+234,hydra
+235,hyena
+236,ice devil
+237,ice devil spear
+238,ice mephit
+239,imp
+240,intellect devourer
+241,invisible stalker
+242,iron golem
+243,jackal
+244,jackalwere
+245,kenku
+246,killer whale
+247,knight
+248,kobold
+249,kraken
+250,kuo-toa
+251,kuo-toa archpriest
+252,kuo-toa monitor
+253,kuo-toa whip
+254,lamia
+255,lemure
+256,lich
+257,lion
+258,lizard
+259,lizard king/queen
+260,lizardfolk
+261,lizardfolk shaman
+262,mage
+263,magma mephit
+264,magmin
+265,mammoth
+266,manes
+267,manticore
+268,marid
+269,marilith
+270,mastiff
+271,medusa
+272,merfolk
+273,merrow
+274,mezzoloth
+275,mimic
+276,mind flayer
+277,mind flayer arcanist
+278,minotaur
+279,minotaur skeleton
+280,monodrone
+281,mud mephit
+282,mule
+283,mummy
+284,mummy lord
+285,myconid adult
+286,myconid sovereign
+287,myconid sprout
+288,nalfeshnee
+289,needle blight
+290,night hag
+291,nightmare
+292,noble
+293,nothic
+294,nycaloth
+295,ochre jelly
+296,octopus
+297,ogre
+298,ogre zombie
+299,oni
+300,orc
+301,orc eye of gruumsh
+302,orc war chief
+303,orog
+304,otyugh
+305,owl
+306,owlbear
+307,panther
+308,pegasus
+309,pentadrone
+310,peryton
+311,phase spider
+312,piercer
+313,pit fiend
+314,pixie
+315,planetar
+316,plesiosaurus
+317,poisonous snake
+318,polar bear
+319,poltergeist
+320,pony
+321,priest
+322,pseudodragon
+323,pteranodon
+324,purple worm
+325,quadrone
+326,quaggoth
+327,quaggoth spore servant
+328,quaggoth thonot
+329,quasit
+330,quipper
+331,rakshasa
+332,rat
+333,raven
+334,red dragon wyrmling
+335,red slaad
+336,reef shark
+337,remorhaz
+338,revenant
+339,rhinoceros
+340,riding horse
+341,roc
+342,roper
+343,rug of smothering
+344,rust monster
+345,saber-toothed tiger
+346,sahuagin
+347,sahuagin baron
+348,sahuagin priestess
+349,salamander
+350,satyr
+351,scarecrow
+352,scorpion
+353,scout
+354,sea hag
+355,sea horse
+356,shadow
+357,shadow demon
+358,shambling mound
+359,shield guardian
+360,shrieker
+361,silver dragon wyrmling
+362,skeleton
+363,slaad tadpole
+364,smoke mephit
+365,solar
+366,spectator
+367,specter
+368,spider
+369,spined devil
+370,spirit naga
+371,sprite
+372,spy
+373,steam mephit
+374,stirge
+375,stone giant
+376,stone golem
+377,storm giant
+378,succubus/incubus
+379,swarm of bats
+380,swarm of beetles
+381,swarm of centipedes
+382,swarm of insects
+383,swarm of poisonous snakes
+384,swarm of quippers
+385,swarm of rats
+386,swarm of ravens
+387,swarm of spiders
+388,swarm of wasps
+389,tarrasque
+390,thri-kreen
+391,thri-kreen (psionic)
+392,thug
+393,tiger
+394,treant
+395,tribal warrior
+396,triceratops
+397,tridrone
+398,troglodyte
+399,troll
+400,twig blight
+401,tyrannosaurus rex
+402,ultroloth
+403,umber hulk
+404,unicorn
+405,vampire
+406,vampire spawn
+407,vampire spellcaster
+408,vampire warrior
+409,veteran
+410,vine blight
+411,violet fungus
+412,vrock
+413,vulture
+414,warhorse
+415,warhorse skeleton
+416,water elemental
+417,water weird
+418,weasel
+419,werebear
+420,wereboar
+421,wererat
+422,weretiger
+423,werewolf
+424,white dragon wyrmling
+425,wight
+426,will-o'-wisp
+427,winged kobold
+428,winter wolf
+429,wolf
+430,worg
+431,wraith
+432,wyvern
+433,xorn
+434,yeti
+435,yochlol
+436,young black dragon
+437,young blue dragon
+438,young brass dragon
+439,young bronze dragon
+440,young copper dragon
+441,young gold dragon
+442,young green dragon
+443,young red dragon
+444,young red shadow dragon
+445,young remorhaz
+446,young silver dragon
+447,young white dragon
+448,yuan-ti abomination
+449,yuan-ti malison type 1
+450,yuan-ti malison type 2
+451,yuan-ti malison type 3
+452,yuan-ti pureblood
+453,zombie
+454,hound of ill omen
+455,tiny servant
+456,abyssal wretch
+457,bronze scout
+458,gloom weaver
+459,iron cobra
+460,oaken bolter
+461,shadow dancer
+462,soul monger
+463,steeder female
+464,steeder male
+465,stone defender
+466,the angry
+467,the hungry
+468,the lonely
+469,the lost
+470,the wretched
+471,black guard drake
+472,blue guard drake
+473,cow
+474,illithilich
+475,mind flayer psion
+476,orc blade of ilneval
+477,orc claw of luthic
+478,orc hand of yurtrus
+479,orc nurtured one of yurtrus
+480,orc red fang of shargaas
+481,rothé
+482,xvart speaker
+483,yuan-ti malison type 4
+484,yuan-ti malison type 5
+485,flying horror
+486,shadow horror
+487,skittering horror
+488,archon of the triumvirate
+489,battleforce angel
+490,deathpact angel
+491,felidar
+492,firemane angel
+493,aurelia
+494,servitor thrull
+495,winged thrull
+496,niv-mizzet
+497,arclight phoenix
+498,blistercoil weird
+499,fluxcharger
+500,galvanice weird
+501,conclave dryad
+502,trostani
+503,cackler
+504,master of cruelties
+505,rakdos
+506,sire of insanity
+507,bloodfray giant
+508,borborygmos
+509,guardian giant
+510,nivix cyclops
+511,orzhov giant
+512,sunder shaman
+513,hybrid brute
+514,hybrid flier
+515,hybrid poisoner
+516,hybrid shocker
+517,hybrid spy
+518,biomancer
+519,blood witch
+520,cosmotronic blastseeker
+521,counterflux blastseeker
+522,druid of the old ways
+523,firefist
+524,flux blastseeker
+525,frontline medic
+526,galvanic blastseeker
+527,horncaller
+528,lawmage
+529,mind mage
+530,precognitive mage
+531,rakdos lampooner
+532,"rakdos performer, blade juggler"
+533,"rakdos performer, fire eater"
+534,"rakdos performer, high-wire acrobat"
+535,reckoner
+536,rubblebelt stalker
+537,scorchbringer guard
+538,soldier
+539,thought spy
+540,golgari shaman
+541,kraul death priest
+542,kraul warrior
+543,zegana
+544,category 1 krasis
+545,category 2 krasis
+546,category 3 krasis
+547,isperia
+548,skyjek roc
+549,skyswimmer
+550,undercity medusa
+551,wurm
+552,lazav
+553,anarch
+554,blood drinker vampire
+555,devkarin lich
+556,gloamwing
+557,indentured spirit
+558,jarad vod savo
+559,mind drinker vampire
+560,nightveil specter
+561,obzedat ghost
+562,simic merfolk
+563,sphinx of judgment
+564,belashyrra
+565,bone knight
+566,changeling
+567,clawfoot
+568,corrin delmaco
+569,dolgaunt
+570,dolgrim
+571,dusk hag
+572,dyrrn
+573,expeditious messenger
+574,iron defender
+575,fastieth
+576,garra
+577,hashalaq quori
+578,inspired
+579,kalaraq quori
+580,kalashtar
+581,karrnathi undead soldier
+582,lady illmarrow
+583,living burning hands
+584,living cloudkill
+585,living lightning bolt
+586,magewright
+587,mordakhesh
+588,radiant idol
+589,rak tulkhesh
+590,shifter
+591,sul khatesh
+592,tarkanan assassin
+593,the lord of blades
+594,tsucora quori
+595,undying councilor
+596,undying soldier
+597,valenar hawk
+598,valenar hound
+599,valenar steed
+600,warforged colossus
+601,warforged soldier
+602,warforged titan
+603,zakya rakshasa
+604,chaos quadrapod
+605,clockwork dragon
+606,keg robot
+607,splugoth the returned
+608,ancient deep crow
+609,deep crow
+610,donaar blit'zen
+611,brahma lutier
+612,k'thriss drow'b
+613,môrgæn
+614,oak truestrike
+615,walnut dankgrass
+616,auspicia dran
+617,omin dran
+618,rosie beestinger
+619,flabbergast
+620,jim darkmagic
+621,pendragon beestinger
+622,phoenix anvil
+623,viari
+624,portentia dran
+625,prophetess dran
+626,aeorian absorber
+627,aeorian nullifier
+628,aeorian reverser
+629,allowak abominable yeti
+630,allowak yeti
+631,animated knife
+632,animated tree
+633,blood hunter
+634,bol'bara
+635,bristled moorbounder
+636,core spawn crawler
+637,core spawn emissary
+638,core spawn seer
+639,core spawn worm
+640,damaged flesh golem
+641,ferol sal
+642,frost giant zombie
+643,frost worm
+644,gearkeeper construct
+645,gloomstalker
+646,guardian wolf
+647,horizonback tortoise
+648,hulil lutan
+649,husk zombie
+650,ishel
+651,"karkethzerethzerus, the sable despoiler"
+652,kobold underling
+653,merrow shallowpriest
+654,moorbounder
+655,mossback steward
+656,nergaliid
+657,ogre lord buhfal ii
+658,old croaker
+659,oracs the enduring
+660,parson pellinost
+661,raegrin mau
+662,sahuagin warlock of uk'otoa
+663,sea fury
+664,shadowghast
+665,sharkbody abomination
+666,sken zabriss
+667,skr'a s'orsk
+668,swarm of undead snakes
+669,swavain basilisk
+670,three earrings
+671,udaak
+672,vox seeker
+673,yinra emberwind
+674,assassin bug
+675,blindheim
+676,crab folk
+677,dire corby
+678,eye of fear and flame
+679,forlarren
+680,fog giant
+681,jermlaine
+682,khargra
+683,killmoulis
+684,mite
+685,needle spawn
+686,needle lord
+687,norker
+688,norker war leader
+689,screaming devilkin
+690,"ygorl, lord of entropy"
+691,xill
+692,decapus
+693,geonid
+694,marine decapus
+695,topi
+696,abhorrent overlord
+697,akroan hoplite
+698,alseid
+699,anvilwrought raptor
+700,aphemia
+701,arasta
+702,archon of falling stars
+703,ashen rider
+704,blood-toll harpy
+705,broken king antigonos
+706,bronze sable
+707,burnished hart
+708,colossus of akros
+709,doomwake giant
+710,eater of hope
+711,fleecemane lion
+712,flitterstep eidolon
+713,ghostblade eidolon
+714,gold-forged sentinel
+715,hippocamp
+716,hundred-handed one
+717,hythonia
+718,ironscale hydra
+719,lampad
+720,leonin iconoclast
+721,meletian hoplite
+722,nightmare shepherd
+723,nyx-fleece ram
+724,oracle
+725,oread
+726,phylaskia
+727,polukranos
+728,returned drifter
+729,returned kakomantis
+730,returned palamnite
+731,returned sentry
+732,satyr reveler
+733,satyr thornbearer
+734,setessan hoplite
+735,theran chimera
+736,triton master of waves
+737,triton shorestalker
+738,tromokratis
+739,two-headed cerberus
+740,typhon
+741,underworld cerberus
+742,winged bull
+743,winged lion
+744,woe strider
+745,apprentice
+746,sneak
+747,disciple
+748,squire
+749,bodytaker plant
+750,podling
+751,boneless
+752,brain in a jar
+753,carrion stalker
+754,carrionette
+755,death's head
+756,dullahan
+757,gallows speaker
+758,gremishka
+759,swarm of gremishkas
+760,jiangshi
+761,loup garou
+762,necrichor
+763,nosferatu
+764,priest of osybus
+765,relentless slasher
+766,relentless juggernaut
+767,lesser star spawn emissary
+768,greater star spawn emissary
+769,strigoi
+770,swarm of maggots
+771,swarm of scarabs
+772,inquisitor of the mind fire
+773,inquisitor of the sword
+774,inquisitor of the tome
+775,unspeakable horror
+776,vampiric mind flayer
+777,swarm of zombie limbs
+778,zombie clot
+779,zombie plague spreader
+780,isolde
+781,elise
+782,cornelius watson
+783,flimp shagglecran
+784,valygar
+785,xan moonblade
+786,naes inuus
+787,tiberius inuus
+788,kivan
+789,faldorn
+790,nauk
+791,borivik windheim
+792,jaheira
+793,vellin farstride
+794,suldil baldoriel
+795,minsc and boo!
+796,jon irenicus
+797,bodhi irenicus
+798,lothar
+799,viktor
+800,montaron and the laughing skull
+801,imoen
+802,baalzebul
+803,"bhaal, slayer"
+804,"bhaal, ravager"
+805,cryonax
+806,mephistopheles
+807,pazuzu
+808,"ssendam, lord of madness"
+809,aribeth de tylmarande
+810,dagryn
+811,darien
+812,edwin odesseiron
+813,eo ashmajiir
+814,kagain
+815,pelyious avhoste
+816,saemon havarian
+817,sarevok
+818,viconia devir
+819,xzar the chaos clone
+820,achaierai
+821,bebilith
+822,"demodand, farastu"
+823,"demodand, kelubar"
+824,"demodand, shator"
+825,dread doppelganger
+826,gibberling
+827,hamadryad
+828,sirene
+829,phaerimm
+830,skeleton lord
+831,skeleton warrior
+832,deep spider
+833,sword spider
+834,tasloi
+835,tasloi sniper
+836,wolfwere alpha
+837,wolfwere
+838,draconic spirit
+839,drake companion
+840,adult amethyst dragon
+841,adult crystal dragon
+842,adult deep dragon
+843,adult emerald dragon
+844,adult moonstone dragon
+845,adult sapphire dragon
+846,adult topaz dragon
+847,amethyst dragon wyrmling
+848,amethyst greatwyrm
+849,ancient amethyst dragon
+850,ancient crystal dragon
+851,ancient emerald dragon
+852,ancient sapphire dragon
+853,ancient topaz dragon
+854,ancient deep dragon
+855,ancient dragon turtle
+856,ancient moonstone dragon
+857,ancient sea serpent
+858,animated breath
+859,aspect of bahamut
+860,aspect of tiamat
+861,black greatwyrm
+862,blue greatwyrm
+863,brass greatwyrm
+864,bronze greatwyrm
+865,copper greatwyrm
+866,crystal dragon wyrmling
+867,crystal greatwyrm
+868,deep dragon wyrmling
+869,dracohydra
+870,draconian dreadnought
+871,draconian foot soldier
+872,draconian infiltrator
+873,draconian mage
+874,draconian mastermind
+875,draconic shard
+876,dragon blessed
+877,dragon chosen
+878,dragon speaker
+879,dragon turtle wyrmling
+880,dragonblood ooze
+881,dragonbone golem
+882,dragonborn of bahamut
+883,dragonborn of sardior
+884,dragonborn of tiamat
+885,dragonflesh abomination
+886,dragonflesh grafter
+887,dragonnel
+888,egg hunter adult
+889,egg hunter hatchling
+890,elder brain dragon
+891,emerald dragon wyrmling
+892,emerald greatwyrm
+893,eyedrake
+894,gem stalker
+895,ghost dragon
+896,gold greatwyrm
+897,green greatwyrm
+898,hoard mimic
+899,hoard scarab
+900,hollow dragon
+901,liondrake
+902,metallic peacekeeper
+903,metallic warbler
+904,moonstone dragon wyrmling
+905,red greatwyrm
+906,sapphire dragon wyrmling
+907,sapphire greatwyrm
+908,silver greatwyrm
+909,swarm of hoard scarabs
+910,topaz dragon wyrmling
+911,topaz greatwyrm
+912,white greatwyrm
+913,young amethyst dragon
+914,young crystal dragon
+915,young deep dragon
+916,young dragon turtle
+917,young emerald dragon
+918,young moonstone dragon
+919,young sapphire dragon
+920,young sea serpent
+921,young topaz dragon
+922,archaic
+923,art elemental mascot
+924,beledros witherbloom
+925,brackish trudge
+926,cogwork archivist
+927,daemogoth
+928,daemogoth titan
+929,first-year student
+930,fractal mascot
+931,galazeth prismari
+932,groff
+933,inkling mascot
+934,lorehold apprentice
+935,lorehold pledgemage
+936,lorehold professor of chaos
+937,lorehold professor of order
+938,mage hunter
+939,murgaxor
+940,oracle of strixhaven
+941,oriq blood mage
+942,oriq recruiter
+943,pest mascot
+944,prismari apprentice
+945,prismari pledgemage
+946,prismari professor of expression
+947,prismari professor of perfection
+948,quandrix apprentice
+949,quandrix pledgemage
+950,quandrix professor of substance
+951,quandrix professor of theory
+952,relic sloth
+953,ruin grinder
+954,scufflecup teacup
+955,shadrix silverquill
+956,silverquill apprentice
+957,silverquill pledgemage
+958,silverquill professor of radiance
+959,silverquill professor of shadow
+960,spirit statue mascot
+961,strixhaven campus guide
+962,tanazir quandrix
+963,velomachus lorehold
+964,witherbloom apprentice
+965,witherbloom pledgemage
+966,witherbloom professor of decay
+967,witherbloom professor of growth
+968,y'demi
+969,abjurer wizard
+970,adult kruthik
+971,adult oblex
+972,air elemental myrmidon
+973,alhoon
+974,alkilith
+975,allip
+976,amnizu
+977,angry sorrowsworn
+978,annis hag
+979,apprentice wizard
+980,archdruid
+981,archer
+982,armanite
+983,astral dreadnought
+984,aurochs
+985,autumn eladrin
+986,babau
+987,bael
+988,balhannoth
+989,banderhobb
+990,baphomet
+991,bard
+992,barghest
+993,berbalang
+994,bheur hag
+995,black abishai
+996,blackguard
+997,blue abishai
+998,bodak
+999,boggle
+1000,boneclaw
+1001,brontosaurus
+1002,bulezau
+1003,cadaver collector
+1004,canoloth
+1005,catoblepas
+1006,cave fisher
+1007,champion
+1008,chitine
+1009,choker
+1010,choldrith
+1011,clockwork bronze scout
+1012,clockwork iron cobra
+1013,clockwork oaken bolter
+1014,clockwork stone defender
+1015,cloud giant smiling one
+1016,conjurer wizard
+1017,corpse flower
+1018,cranium rat
+1019,darkling
+1020,darkling elder
+1021,death kiss
+1022,deathlock
+1023,deathlock mastermind
+1024,deathlock wight
+1025,deep rothé
+1026,deep scion
+1027,deinonychus
+1028,demogorgon
+1029,derro
+1030,derro savant
+1031,devourer
+1032,dhergoloth
+1033,dimetrodon
+1034,dire troll
+1035,diviner wizard
+1036,dolphin
+1037,dolphin delighter
+1038,draegloth
+1039,drow arachnomancer
+1040,drow favored consort
+1041,drow house captain
+1042,drow inquisitor
+1043,drow matron mother
+1044,drow shadowblade
+1045,duergar despot
+1046,duergar hammerer
+1047,duergar kavalrachni
+1048,duergar mind master
+1049,duergar screamer
+1050,duergar soulblade
+1051,duergar stone guard
+1052,duergar warlord
+1053,duergar xarrorn
+1054,dybbuk
+1055,earth elemental myrmidon
+1056,eidolon
+1057,elder brain
+1058,elder oblex
+1059,elder tempest
+1060,enchanter wizard
+1061,evoker wizard
+1062,female steeder
+1063,fire elemental myrmidon
+1064,fire giant dreadnought
+1065,firenewt warlock of imix
+1066,firenewt warrior
+1067,flail snail
+1068,flind
+1069,fraz-urb'luu
+1070,froghemoth
+1071,frost giant everlasting one
+1072,frost salamander
+1073,gauth
+1074,gazer
+1075,geryon
+1076,giant strider
+1077,giff
+1078,girallon
+1079,githyanki gish
+1080,githyanki kith'rak
+1081,githyanki supreme commander
+1082,githzerai anarch
+1083,githzerai enlightened
+1084,gnoll flesh gnawer
+1085,gnoll hunter
+1086,gnoll witherling
+1087,gray render
+1088,graz'zt
+1089,green abishai
+1090,grung
+1091,grung elite warrior
+1092,grung wildling
+1093,guard drake
+1094,hadrosaurus
+1095,hellfire engine
+1096,hobgoblin devastator
+1097,hobgoblin iron shadow
+1098,howler
+1099,hungry sorrowsworn
+1100,hutijin
+1101,hydroloth
+1102,illusionist wizard
+1103,juiblex
+1104,ki-rin
+1105,kobold dragonshield
+1106,kobold inventor
+1107,kobold scale sorcerer
+1108,korred
+1109,kraken priest
+1110,kruthik hive lord
+1111,leucrotta
+1112,leviathan
+1113,lonely sorrowsworn
+1114,lost sorrowsworn
+1115,male steeder
+1116,martial arts adept
+1117,marut
+1118,master thief
+1119,maurezhi
+1120,maw demon
+1121,meazel
+1122,meenlock
+1123,merregon
+1124,merrenoloth
+1125,mindwitness
+1126,moloch
+1127,molydeus
+1128,morkoth
+1129,mouth of grolantor
+1130,nabassu
+1131,nagpa
+1132,narzugon
+1133,necromancer wizard
+1134,neogi
+1135,neogi hatchling
+1136,neogi master
+1137,neothelid
+1138,nightwalker
+1139,nilbog
+1140,nupperibo
+1141,oblex spawn
+1142,ogre battering ram
+1143,ogre bolt launcher
+1144,ogre chain brute
+1145,ogre howdah
+1146,oinoloth
+1147,orcus
+1148,orthon
+1149,ox
+1150,phoenix
+1151,quetzalcoatlus
+1152,quickling
+1153,red abishai
+1154,redcap
+1155,retriever
+1156,rot troll
+1157,rutterkin
+1158,sacred statue
+1159,sea spawn
+1160,shadar-kai gloom weaver
+1161,shadar-kai shadow dancer
+1162,shadar-kai soul monger
+1163,shadow mastiff
+1164,shadow mastiff alpha
+1165,shoosuva
+1166,sibriex
+1167,skulk
+1168,skull lord
+1169,slithering tracker
+1170,spawn of kyuss
+1171,spirit troll
+1172,spring eladrin
+1173,star spawn grue
+1174,star spawn hulk
+1175,star spawn larva mage
+1176,star spawn mangler
+1177,star spawn seer
+1178,steel predator
+1179,stegosaurus
+1180,stench kow
+1181,stone cursed
+1182,stone giant dreamwalker
+1183,storm giant quintessent
+1184,summer eladrin
+1185,swarm of cranium rats
+1186,swarm of rot grubs
+1187,swashbuckler
+1188,sword wraith commander
+1189,sword wraith warrior
+1190,tanarukk
+1191,thorny vegepygmy
+1192,titivilus
+1193,tlincalli
+1194,tortle
+1195,tortle druid
+1196,transmuter wizard
+1197,trapper
+1198,ulitharid
+1199,vampiric mist
+1200,vargouille
+1201,vegepygmy
+1202,vegepygmy chief
+1203,velociraptor
+1204,venom troll
+1205,war priest
+1206,warlock of the archfey
+1207,warlock of the fiend
+1208,warlock of the great old one
+1209,warlord
+1210,wastrilith
+1211,water elemental myrmidon
+1212,white abishai
+1213,winter eladrin
+1214,wood woad
+1215,wretched sorrowsworn
+1216,xvart
+1217,xvart warlock of raxivort
+1218,yagnoloth
+1219,yeenoghu
+1220,yeth hound
+1221,young kruthik
+1222,yuan-ti anathema
+1223,yuan-ti broodguard
+1224,yuan-ti mind whisperer
+1225,yuan-ti nightmare speaker
+1226,yuan-ti pit master
+1227,zaratan
+1228,zariel
+1229,zuggtmoy
+1230,abyssal chicken
+1231,amrik vanthampur
+1232,archduke zariel of avernus
+1233,arkhan the cruel
+1234,black gauntlet of bane
+1235,crokek'toeck
+1236,death's head of bhaal
+1237,demon grinder
+1238,devil's ride
+1239,fiendish flesh golem
+1240,fist of bane
+1241,flying dagger
+1242,hellwasp
+1243,hollyphant
+1244,iron consul
+1245,master of souls
+1246,necromite of myrkul
+1247,necrotic centipede
+1248,night blade
+1249,reaper of bhaal
+1250,scavenger
+1251,skull lasher of myrkul
+1252,smiler the defiler
+1253,sylvira savikas
+1254,thavius kreeg
+1255,thurstwell vanthampur
+1256,tormentor
+1257,torogar steelfist
+1258,traxigor
+1259,tressym
+1260,ulder ravengard
+1261,rilsa rael
+1262,nine-fingers keene
+1263,mortlock vanthampur
+1264,mahadi the rakshasa
+1265,krull
+1266,kostchtchie
+1267,gideon lightward
+1268,duke thalamra vanthampur
+1269,bone whelk
+1270,bel
+1271,bitter breath
+1272,burney the barber
+1273,chukka
+1274,clonk
+1275,dryad spirit
+1276,elliach
+1277,feonor
+1278,harkina hunt
+1279,hellwasp grub
+1280,lulu
+1281,mad maggie
+1282,peacock
+1283,princeps kovik
+1284,raggadragga
+1285,skeletal rats
+1286,undead tree
+1287,animated broom
+1288,animated chained library
+1289,canopic golem
+1290,chwinga
+1291,cloud giant ghost
+1292,constructed commoner
+1293,corrupted avatar of lurue
+1294,dragon tortoise
+1295,fungal servant
+1296,gingwatzim
+1297,grippli warrior
+1298,hag of the fetid gaze
+1299,immortal lotus monk
+1300,kiddywidget
+1301,lichen lich
+1302,lightning golem
+1303,master sage
+1304,mimic chair
+1305,parasite-infested behir
+1306,sage
+1307,sapphire sentinel
+1308,skitterwidget
+1309,storm giant skeleton
+1310,swarm of animated books
+1311,wood elf wizard
+1312,miirym
+1313,wereraven
+1314,shemshime
+1315,naiad
+1316,arrant quill
+1317,steel crane
+1318,jade tigress
+1319,bak mei
+1320,nintra siotta
+1321,k'tulah
+1322,valin sarnaster
+1323,zikran
+1324,varnyr
+1325,faerl
+1326,barovian commoner
+1327,barovian scout
+1328,mad mage of mount baratok
+1329,parpol cantemir
+1330,ismark kolyanovich
+1331,baba lysaga
+1332,baba lysaga's creeping hut
+1333,barovian witch
+1334,broom of animated attack
+1335,ezmerelda d'avenir
+1336,guardian portrait
+1337,izek strazni
+1338,kasimir velikov
+1339,madam eva
+1340,mongrelfolk
+1341,phantom warrior
+1342,pidlwick ii
+1343,rahadin
+1344,rictavio
+1345,strahd von zarovich
+1346,strahd zombie
+1347,strahd's animated armor
+1348,the abbot
+1349,vladimir horngaard
+1350,amphisbaena
+1351,bullywug croaker
+1352,drowned ascetic
+1353,drowned assassin
+1354,drowned blade
+1355,drowned master
+1356,giant coral snake
+1357,giant sea eel
+1358,harpy matriarch
+1359,juvenile kraken
+1360,koalinth
+1361,koalinth sergeant
+1362,kysh
+1363,living iron statue
+1364,lizardfolk commoner
+1365,lizardfolk render
+1366,lizardfolk scaleshield
+1367,lizardfolk subchief
+1368,locathah
+1369,locathah hunter
+1370,maw of sekolah
+1371,merfolk salvager
+1372,minotaur living crystal
+1373,monstrous peryton
+1374,mr. dory
+1375,oceanus
+1376,pirate bosun
+1377,pirate captain
+1378,pirate deck wizard
+1379,pirate first mate
+1380,rip tide priest
+1381,sahuagin blademaster
+1382,sahuagin champion
+1383,sahuagin coral smasher
+1384,sahuagin deep diver
+1385,sahuagin hatchling swarm
+1386,sahuagin high priestess
+1387,sahuagin wave shaper
+1388,sanbalet
+1389,sea lion
+1390,shell shark
+1391,skeletal alchemist
+1392,skeletal juggernaut
+1393,skeletal swarm
+1394,skum
+1395,thousand teeth
+1396,vampiric jade statue
+1397,ambush drake
+1398,azbara jos
+1399,blagothkus
+1400,captain othelstan
+1401,dragonclaw
+1402,dralmorrer borngray
+1403,frulam mondath
+1404,jamna gleamsilver
+1405,langdedrosa cyanwrath
+1406,pharblex spattergoo
+1407,rath modar
+1408,rezmir
+1409,talis the white
+1410,evil mage
+1411,"iarno ""glasstaff"" albrek"
+1412,mormesk the wraith
+1413,nezznar the black spider
+1414,redbrand ruffian
+1415,sildar hallwinter
+1416,ash zombie
+1417,awakened zurkhwood
+1418,bridesmaid of zuggtmoy
+1419,chamberlain of zuggtmoy
+1420,chuul spore servant
+1421,droki
+1422,drow spore servant
+1423,duergar darkhaft
+1424,duergar keeper of the flame
+1425,duergar spore servant
+1426,grisha
+1427,hook horror spore servant
+1428,ixitxachitl
+1429,ixitxachitl cleric
+1430,narrak
+1431,the pudding king
+1432,troglodyte champion of laogzed
+1433,vampiric ixitxachitl
+1434,vampiric ixitxachitl cleric
+1435,yestabrod
+1436,aerisi kalinoth
+1437,bastian thermandar
+1438,black earth guard
+1439,black earth priest
+1440,burrowshark
+1441,crushing wave priest
+1442,crushing wave reaver
+1443,dark tide knight
+1444,drannin splithelm
+1445,elizar dryflagon
+1446,eternal flame guardian
+1447,eternal flame priest
+1448,fathomer
+1449,feathergale knight
+1450,flamewrath
+1451,gar shatterkeel
+1452,ghald
+1453,hellenrae
+1454,howling hatred initiate
+1455,howling hatred priest
+1456,hurricane
+1457,imix
+1458,marlos urnrayle
+1459,miraj vizann
+1460,ogremoch
+1461,olhydra
+1462,one-eyed shiver
+1463,oreioth
+1464,razerblast
+1465,sacred stone monk
+1466,shoalar quanderil
+1467,skyweaver
+1468,stonemelder
+1469,thurl merosska
+1470,vanifer
+1471,wiggan nettlebee
+1472,windharrow
+1473,yan-c-bin
+1474,augrek brighthelm
+1475,beldora
+1476,darathra shendrel
+1477,darz helgar
+1478,duvessa shane
+1479,fire giant (variant)
+1480,ghelryn foehammer
+1481,hulking crab
+1482,iymrith (giant form)
+1483,iymrith the dragon
+1484,lifferlas
+1485,maegera the dawn titan
+1486,markham southwell
+1487,miros xelbrin
+1488,narth tezrin
+1489,naxene drathkala
+1490,nimir
+1491,oren yogilvy
+1492,orlekto
+1493,othovir
+1494,purple wormling
+1495,shaldoor
+1496,shalvus martholio
+1497,sir baric nylef
+1498,sirac of suzail
+1499,urgala meltimer
+1500,uthgardt shaman
+1501,vaasha
+1502,yakfolk priest
+1503,yakfolk warrior
+1504,zi liang
+1505,bryn lightfingers
+1506,hommet shaw
+1507,illydia maethellyn
+1508,jarhild stoneforge
+1509,larethar gulgrin
+1510,animated table
+1511,centaur mummy
+1512,dread warrior
+1513,duergar spy
+1514,giant crayfish
+1515,giant ice toad
+1516,giant lightning eel
+1517,giant skeleton
+1518,giant subterranean lizard
+1519,greater zombie
+1520,kalka-kylla
+1521,kelpie
+1522,malformed kraken
+1523,nereid
+1524,ooze master
+1525,sharwyn hucrele
+1526,sir braford
+1527,siren
+1528,tarul var
+1529,tecuziztecatl
+1530,thayan apprentice
+1531,thayan warrior
+1532,thorn slinger
+1533,white maw
+1534,yusdrayl
+1535,belak the outcast
+1536,bugbear gardener
+1537,bugbear lieutenant
+1538,chief nosnra
+1539,cloud giant noble
+1540,dragonpriest
+1541,drow commander
+1542,durnn
+1543,eira
+1544,elder black pudding
+1545,erky timbers
+1546,estia
+1547,fire giant royal headsman
+1548,flying shield
+1549,four-armed gargoyle
+1550,frost giant servant
+1551,goblin commoner
+1552,great ulfe
+1553,grenl
+1554,guthash
+1555,hill giant sergeant
+1556,hill giant subchief
+1557,huge giant crab
+1558,huge polar bear
+1559,jarl grugnur
+1560,kaarghaz
+1561,king snurre
+1562,kobold commoner
+1563,kobold elite
+1564,lacedon
+1565,true mummy lord
+1566,nedylene
+1567,nimira
+1568,obmi
+1569,ogre skeleton
+1570,scrag
+1571,sentient gray ooze
+1572,sentient ochre jelly
+1573,snarla
+1574,snurrevin
+1575,stone dragon statue
+1576,the keeper
+1577,tloques-popolocas
+1578,xilonen
+1579,yeti leader
+1580,steel defender
+1581,homunculus servant
+1582,dancing item
+1583,wildfire spirit
+1584,beast of the land
+1585,beast of the sea
+1586,beast of the sky
+1587,aberrant spirit
+1588,bestial spirit
+1589,celestial spirit
+1590,construct spirit
+1591,elemental spirit
+1592,fey spirit
+1593,fiendish spirit
+1594,shadow spirit
+1595,undead spirit
+1596,mighty servant of leuk-o
+1597,juvenile mimic
+1598,dragonfang
+1599,dragonsoul
+1600,dragonwing
+1601,ice toad
+1602,naergoth bladelord
+1603,neronvain
+1604,severin
+1605,tiamat
+1606,agdon longscarf
+1607,alagarthas
+1608,amidor the dandelion
+1609,bavlorna blightstraw
+1610,brigganock
+1611,bullywug knight
+1612,bullywug royal
+1613,campestri
+1614,clapperclaw the scarecrow
+1615,displacer beast kitten
+1616,elkhorn
+1617,endelyn moongrave
+1618,envy
+1619,flying rocking horse
+1620,giant dragonfly
+1621,giant snail
+1622,giant swan
+1623,glass pegasus
+1624,glasswork golem
+1625,gloam
+1626,harengon brigand
+1627,harengon sniper
+1628,iggwilv the witch queen
+1629,jabberwock
+1630,jingle jangle
+1631,kelek
+1632,kettlesteam the kenku
+1633,living doll
+1634,mercion
+1635,mister light
+1636,mister witch
+1637,molliver
+1638,paper bird
+1639,pollenella the honeybee
+1640,raezil
+1641,ringlerun
+1642,selenelion twin
+1643,shadow (variant)
+1644,sir talavar
+1645,skabatha nightshade
+1646,skylla
+1647,squirt the oilcan
+1648,strongheart
+1649,swarm of campestris
+1650,tin soldier
+1651,treant sapling
+1652,tree blight
+1653,warduke
+1654,will-o'-wisp (variant)
+1655,witchlight hand
+1656,witchlight hand (small)
+1657,zarak
+1658,zargash
+1659,acererak
+1660,albino dwarf spirit warrior
+1661,albino dwarf warrior
+1662,aldani (lobsterfolk)
+1663,almiraj
+1664,ankylosaurus zombie
+1665,artus cimber
+1666,assassin vine
+1667,atropal
+1668,dragonbait
+1669,eblis
+1670,flying monkey
+1671,giant four-armed gargoyle
+1672,giant snapping turtle
+1673,girallon zombie
+1674,jaculi
+1675,kamadan
+1676,liara portyr
+1677,mantrap
+1678,mwaxanaré
+1679,pterafolk
+1680,ras nsi
+1681,stone juggernaut
+1682,su-monster
+1683,tabaxi hunter
+1684,tabaxi minstrel
+1685,tri-flower frond
+1686,tyrannosaurus zombie
+1687,volothamp “volo” geddarm
+1688,xandala
+1689,yellow musk creeper
+1690,yellow musk zombie
+1691,zindar
+1692,zorbo
+1693,ahmaergo
+1694,ammalia cassalanter
+1695,barnibus blastwind
+1696,black viper
+1697,sergeant
+1698,griffon cavalry rider
+1699,davil starsong
+1700,istrid horn
+1701,skeemo weirdbottle
+1702,tashlyn yafeera
+1703,ziraj the hunter
+1704,drow gunslinger
+1705,fel'rekl lafeen
+1706,krebbyg masq'il'yr
+1707,soluun xibrindas
+1708,floon blagmaar
+1709,durnan
+1710,hlam
+1711,hrabbaz
+1712,jalester silvermane
+1713,jarlaxle baenre
+1714,laeral silverhand
+1715,manshoon
+1716,manshoon's simulacrum
+1717,meloon wardragon
+1718,mirt
+1719,nar'l xibrindas
+1720,noska ur'gray
+1721,orond gralhund
+1722,ott steeltoes
+1723,remallia haventree
+1724,renaer nevercmber
+1725,saeth cromley
+1726,thorvin twinbeard
+1727,urstul floxin
+1728,vajra safahr
+1729,victoro cassalanter
+1730,walking statue of waterdeep
+1731,xanathar
+1732,sylgar
+1733,yalah gralhund
+1734,nimblewright
+1735,halaster blackcloak
+1736,lava child
+1737,living unseen servant
+1738,muiral
+1739,scaladar
+1740,shadow assassin
+1741,werebat
+1742,demogorgon (monstrosity)
+1743,thessalhydra
+1744,sephek kaltro
+1745,awakened white moose
+1746,spellix romwood
+1747,prisoner 237
+1748,grandolpha muzgart
+1749,kingsport
+1750,avarice
+1751,dzann's simulacrum
+1752,dzann's clone
+1753,nass lantomir's ghost
+1754,vellynne harpell
+1755,auril (first form)
+1756,auril (second form)
+1757,auril (third form)
+1758,chardalyn berserker
+1759,chardalyn dragon
+1760,coldlight walker
+1761,crag cat
+1762,xardorok sunblight
+1763,fox
+1764,frost druid
+1765,frost giant skeleton
+1766,gnoll vampire
+1767,goliath warrior
+1768,goliath werebear
+1769,hare
+1770,ice troll
+1771,knucklehead trout
+1772,icewind kobold
+1773,icewind kobold zombie
+1774,kobold vampire spawn
+1775,living bigby's hand
+1776,living blade of disaster
+1777,living demiplane
+1778,demos magen
+1779,galven magen
+1780,hypnos magen
+1781,spitting mimic
+1782,gnome ceremorph
+1783,gnome squidling
+1784,mountain goat
+1785,gunvald halraggson
+1786,jarund elkhardt
+1787,bjornhild solvigsdottir
+1788,isarr kronenstrom
+1789,seal
+1790,snow golem
+1791,snowy owlbear
+1792,sperm whale
+1793,tomb tapper
+1794,verbeeg longstrider
+1795,verbeeg marauder
+1796,walrus
+1797,giant walrus
+1798,yeti tyke
+1799,gloine nathair-nathair
+1800,"""the demogorgon"""
+1801,barbatos
+1802,lynx creatlach
+1803,moghadam
+1804,sir ursas
+1805,thessalar
+1806,thessalheart construct
+1807,thessalkraken
+1808,two-headed crocodile
+1809,two-headed owlbear
+1810,neo-otyugh
+1811,andras
+1812,brain in iron
+1813,dwarven worker
+1814,enhanced medusa
+1815,grandfather oak
+1816,seodra
+1817,skeletal giant owl
+1818,skeletal polar bear
+1819,skeletal owlbear
+1820,skeletal two-headed owlbear
+1821,stolos
+1822,tarnhem
+1823,thessalar's homunculus
+1824,tiefling muralist
+1825,amble
+1826,gar shatterkeel–locathah rising
+1827,young kraken
+1828,shoalar quanderil–locathah rising
+1829,whymsee (kraken priest variant)
+1830,fhenimore (kraken priest variant)
+1831,clockwork kraken
+1832,garret levistusson
+1833,mary greymalkin
+1834,ooze-folk
+1835,spellcaster
+1836,expert
+1837,warrior
+1838,anchorite of talos
+1839,don-jon raskin
+1840,falcon the hunter
+1841,gorthok the thunder boar
+1842,rock gnome recluse
+1843,ebondeath
+1844,statue of talos
+1845,skull flier
+1846,tooth-n-claw
+1847,giant shark skeleton
+1848,lhammaruntosz
+1849,aboleth spawn
+1850,agathe silverspoon
+1851,aloysia telfan
+1852,alyxian aboleth
+1853,alyxian the absolved
+1854,alyxian the callous
+1855,alyxian the dispossessed
+1856,alyxian the hunter
+1857,alyxian the tormented
+1858,animated glass statue
+1859,aradrine the owl
+1860,ashann
+1861,ayo jabe (tier 1)
+1862,ayo jabe (tier 2)
+1863,ayo jabe (tier 3)
+1864,celeste
+1865,corrupted giant shark
+1866,dancing flame
+1867,death embrace
+1868,dermot wurder (tier 1)
+1869,dermot wurder (tier 2)
+1870,dermot wurder (tier 3)
+1871,fiendish orc
+1872,foghomer
+1873,galeokaerda
+1874,galsariad ardyth (tier 1)
+1875,galsariad ardyth (tier 2)
+1876,galsariad ardyth (tier 3)
+1877,gryz alakritos
+1878,insight acuere
+1879,irvan wastewalker (tier 1)
+1880,irvan wastewalker (tier 2)
+1881,irvan wastewalker (tier 3)
+1882,james cryon
+1883,jamil a'alithiya
+1884,koris
+1885,laurin ophidas
+1886,light devourer
+1887,maggie keeneyes (tier 1)
+1888,maggie keeneyes (tier 2)
+1889,maggie keeneyes (tier 3)
+1890,marisa
+1891,meri
+1892,monastic high curator
+1893,monastic infiltrator
+1894,monastic operative
+1895,moonshark
+1896,occult extollant
+1897,occult initiate
+1898,occult silvertongue
+1899,olara
+1900,perigee
+1901,prolix yusaf
+1902,ruidium elephant
+1903,scholarly agent
+1904,scholarly excavator
+1905,scholarly mastermind
+1906,scribble
+1907,scuttling serpentmaw
+1908,shira
+1909,skeletal bloodfin
+1910,slithering bloodfin
+1911,sorrowfish
+1912,swarm of sorrowfish
+1913,verin thelyss
+1914,xot
+1915,young horizonback tortoise
+1916,afsoun ghorbani
+1917,amanisha manivarshi
+1918,ameyali
+1919,ashen heir anarchist
+1920,ashen heir assassin
+1921,ashen heir mage
+1922,ashen heir veteran
+1923,atash
+1924,atiba-pa
+1925,aunt dellie
+1926,aurumvorax
+1927,aurumvorax den leader
+1928,azra nir
+1929,bakunawa
+1930,brother broumane
+1931,dinosaur skeleton
+1932,diva
+1933,diva luma
+1934,djeneba
+1935,dragon hunter
+1936,dukha bhatiyali
+1937,gammon xungoon
+1938,haint
+1939,jade soldier statue
+1940,jijibisha manivarshi
+1941,kala mabarin
+1942,kasem aroon
+1943,kedjou kamal
+1944,kianna
+1945,koi prawn
+1946,kun ahn-jun
+1947,kusa xungoon
+1948,lady dre
+1949,laleh ghorbani
+1950,lamai tyenmo
+1951,lu zhong yin
+1952,lungtian
+1953,madam kulp
+1954,myx nargis ruba
+1955,navid
+1956,nene
+1957,nightsea chil-liren
+1958,nimuel
+1959,ollin
+1960,paloma
+1961,paolo maykapal
+1962,pari
+1963,prince kirina
+1964,prince simbon
+1965,riverine
+1966,rooster
+1967,samira arah
+1968,sensa prince
+1969,serapio
+1970,sholeh
+1971,soul shaker
+1972,tlacatecolo
+1973,tlexolotl
+1974,tonalli
+1975,tungsten ward
+1976,uzoma baten
+1977,vi aroon
+1978,wei feng ying
+1979,whistler
+1980,white jade emperor
+1981,wynling
+1982,xocopol
+1983,yarana
+1984,young-gi
+1985,zisatta
+1986,aarakocra spelljammer
+1987,aartuk elder
+1988,aartuk priest
+1989,aartuk warrior
+1990,adult lunar dragon
+1991,adult solar dragon
+1992,agony
+1993,ancient lunar dragon
+1994,ancient solar dragon
+1995,astral blight
+1996,astral elf aristocrat
+1997,astral elf commander
+1998,astral elf honor guard
+1999,astral elf star priest
+2000,astral elf warrior
+2001,autognome
+2002,b'rohg
+2003,big momma
+2004,braxat
+2005,brown scavver
+2006,chwinga astronaut
+2007,commodore krux
+2008,cosmic horror
+2009,dohwar
+2010,elaina sartell
+2011,esthetic
+2012,eye monger
+2013,fel ardra
+2014,feyr
+2015,flapjack
+2016,gaj
+2017,giant space hamster
+2018,giff shipmate
+2019,giff shock trooper
+2020,giff warlord
+2021,githyanki buccaneer
+2022,githyanki star seer
+2023,githyanki xenomancer
+2024,gray scavver
+2025,grimzod gargenhale
+2026,hadozee explorer
+2027,hadozee shipmate
+2028,hadozee warrior
+2029,hastain
+2030,jammer leech
+2031,kindori
+2032,lunar dragon wyrmling
+2033,megapede
+2034,mercane
+2035,murder comet
+2036,neh-thalggu
+2037,neogi hatchling swarm
+2038,neogi pirate
+2039,neogi void hunter
+2040,night scavver
+2041,plasmoid boss
+2042,plasmoid explorer
+2043,plasmoid warrior
+2044,prince xeleth
+2045,princess xedalli
+2046,psurlon
+2047,psurlon leader
+2048,psurlon ringer
+2049,reigar
+2050,solar dragon wyrmling
+2051,space clown
+2052,space eel
+2053,space guppy
+2054,space hamster
+2055,space mollymawk
+2056,space swine
+2057,ssurran defiler
+2058,ssurran poisoner
+2059,starlight apparition
+2060,thri-kreen gladiator
+2061,thri-kreen hunter
+2062,thri-kreen mystic
+2063,topolah
+2064,vampirate
+2065,vampirate captain
+2066,vampirate mage
+2067,vocath
+2068,void scavver
+2069,warwyck blastimoff
+2070,young lunar dragon
+2071,young solar dragon
+2072,zodar
