@@ -1,5 +1,7 @@
 # Courier - An AI assistant for D&D
 
+### Note: Chrome and Safari are the only browsers compatible with ```react-speech-recognition```
+
 ## Project Description
 
 Courier is a student project that aims to create a DM assistant tool for Dungeons & Dragons games. The tool listens to ongoing gameplay sessions, or even just the DM’s audio, and processes the audio in real-time to provide DMs with relevant game information, rules, and references when they need them.
