@@ -229,17 +229,36 @@ const AudioRecorder: React.FC<AudioRecorderProps> = ({
         return buffer;
     }
     
-    async function postAudioFile(url: string): Promise<Response> {
-        const wavBuffer = createWavBuffer();
-        const blob = new Blob([wavBuffer], { type: 'audio/wav' });
-        
-        const formData = new FormData();
-        formData.append('audio', blob, 'recording.wav');
-        
-        return fetch(url, {
-            method: 'POST',
-            body: formData
-        });
+    async function postAudioFile(url: string): Promise<boolean> {
+        try {
+            // Check if we have audio data
+            if (!bufferRef.current || bufferRef.current.getAudio().length === 0) {
+                console.warn('No audio data available to send');
+                return false;
+            }
+
+            const wavBuffer = createWavBuffer();
+            const blob = new Blob([wavBuffer], { type: 'audio/wav' });
+            
+            const formData = new FormData();
+            formData.append('audio', blob, 'recording.wav');
+            
+            const response = await fetch(url, {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) {
+                console.error("Failed to post audio file: ", response.status, response.text);
+                return false;
+            }
+
+            console.log("Audio file posted successfully.")
+            return true
+        } catch (err) {
+            console.error("Error posting audio file: ", err);
+            return false;
+        }
     }
 
     return (
@@ -260,9 +279,7 @@ const AudioRecorder: React.FC<AudioRecorderProps> = ({
             <p>Playback: {isPlaying ? "Playing" : "Stopped"}</p>
             <button onClick={() => { supabase.auth.signOut() }}>Log Out</button>
             <div>
-                <KeywordDetector onKeywordDetected={ () => postAudioFile(
-                    "https://n8n.lab.printf.org/webhook-test/resource-request"
-                ) } />
+                <KeywordDetector onKeywordDetected={async () => { await postAudioFile('https://n8n.lab.printf.org/webhook-test/resource-request')}} />
             </div>
         </div>
     )

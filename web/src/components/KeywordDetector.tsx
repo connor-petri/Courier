@@ -45,6 +45,7 @@ const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) 
                 const newKeywords: string[] = [];
                 data.forEach(row => {
                     newKeywords.push(row.keyword);
+                    console.log(row.keyword);
                 })
 
                 setKeywords(newKeywords);
@@ -52,7 +53,7 @@ const KeywordDetector: React.FC<KeywordDetectorProps> = ({ onKeywordDetected }) 
         }
 
         try {
-            getKeywords();
+            if (keywords.length === 0) getKeywords();
 
             if (transcript && keywords.length > 0) {
                 const foundKeyword = keywords.find(keyword => 
